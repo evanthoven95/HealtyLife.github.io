@@ -44,8 +44,8 @@ padding: 0%;
 
 }
 .calculadora-img{
-    width: 400px;
-    height: 350px;
+    width: 85%;
+    height: 100%;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -103,8 +103,8 @@ ul{
     text-align: justify;
 }
 .rutine-img{
-    width: 400px;
-    height: 300px;
+    width: 85%;
+    height: 100%;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
