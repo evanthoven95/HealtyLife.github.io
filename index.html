@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--Bootstrap v5-->   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Font Awesome CDN  -->
@@ -24,7 +24,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" href="#imc">Calculadora IMC</a>
                   </li>
                   <li class="nav-item">
@@ -43,69 +43,148 @@
             <div class="row"> 
                 <div class="columns col-lg-6 col-sm-12">
                     
-                        <img class="calculadora-img" src="IMC.jpeg" alt="IMC-images">
+                        <img class="calculadora-img" src="images/IMC.jpeg" alt="IMC-images">
                     
                 </div>    
-                <div class="columns col-lg-4 col-sm-12">
+                <div class="columns col-lg-6 col-sm-12">
                     <h1>Calculadora del índice de masa corporal (IMC)</h1>
-                    <p>El <span class="quartzo">sobrepeso</span> puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.</p>
+                    <p class="justify">El <span class="quartzo">sobrepeso</span> puede causar la elevación de la concentración de colesterol total y de la presión arterial, y aumentar el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta, colesterol elevado y diabetes.</p>
                 </div>         
             </div>
         </div>
         
-
         <div class="container-fluid">
             <div class="row">
+                <div class="description col-lg-6 col-sm-12">
+                    <table>
+                        <tr>
+                            <th >IMC</th>
+                            <th >Nivel de peso</th>
+                        </tr>
+                        <tr>
+                            <td>Menos de 18.5</td>
+                            <td>Bajo peso</td>
+                        </tr>
+                        <tr>
+                            <td>18.5-24.9</td>
+                            <td>Peso saludable</td>
+                        </tr>
+                        <tr>
+                            <td>25-29.9</td>
+                            <td>Sobrepeso</td>
+                        </tr>
+                        <tr>
+                            <td>30 0 más</td>
+                            <td>Obesidad</td>
+                        </tr>
+                    </table>
+                
+                </div>
+                <div class="description col-lg-6 col-sm-12">
+                    <h1 class="title">¿Cómo se determina el indice de masa corporal?</h1>
+                    <p class="justify"> 
+                        Una medida de la obesidad se determina mediante el índice de masa corporal (IMC), que se calcula dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso (kg)/ [estatura (m)]2. Según el Instituto Nacional del Corazón, los Pulmones y la Sangre de los Estados Unidos (NHLBI), el sobrepeso se define como un IMC de más de 25. Se considera que una persona es obesa si su IMC es superior a 30. Usted puede determinar su IMC con la calculadora que se encuentra a continuación. Con la cifra del IMC puede averiguar su composición corporal en la tabla que aparece debajo de la calculadora.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="dos row">
                 <div class="card px-0 col-lg-6">
                     <div class="card-header">Calculadora del IMC para adultos</div>
                     <div class="card-body">
                         <div class="row"> 
-                            <label for="peso">Peso (Kg)</label>
+                            <label>Peso (Kg)</label>
                             <input type="text" name="peso" id="weight">
-                            <label for="estatura">Estatura (m)</label>
+                            <label>Estatura (m)</label>
                             <input type="text" name="estatura" id="height">
-                            <label for="result" class="resultado" id="resultado">Mantente saludable</label>
+                            <label class="resultado" id="resultado">Mantente saludable</label>
                         </div>
                         <button class="btn btn-primary">Calcular</button>
                     </div>
                 </div>
                 
-                <div class="res-description col-lg-6">
+                    <div class="res-description col-lg-6">
                         <h2 class="title">Recuerde que...</h2>
                             <p class="justify">
-                                <ul class="justify">
-                                    <li>El ejercicio es clave para la salud física y de la mente.</li>
-                                    <li>Saber comer es saber vivir.</li>
-                                    <li>Cuide su cuerpo. Es el único sitio que usted tiene para vivir.</li>
-                                    <li>La actividad física no es solo una de las claves más importantes para un cuerpo saludable, es la base de una actividad dinámica y creativa.</li>
+                                <ul class="list-group">
+                                    <li class="dieta list-group-item">El ejercicio es clave para la salud física y de la mente.</li>
+                                    <li class="dieta list-group-item">Saber comer es saber vivir.</li>
+                                    <li class="dieta list-group-item">Cuide su cuerpo, es el único sitio que usted tiene para vivir.</li>
+                                    <li class="dieta list-group-item">La actividad física no es solo una de las claves más importantes para un cuerpo saludable, es la base de una actividad dinámica y creativa.</li>
                                 </ul>
                             </p>
+                            
+                    </div>
+                </div>
+            </div>
+    <section id="diet">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="columns col-lg-6 col-sm-12">
+                    <img class="diet-img" src="/images/calorias.jpg" alt="calorias">
+                </div>
+
+                <div class="columns col-lg-6 col-sm-12">
+                    <h2 class="title">
+                        ¿Qué son las calorías?
+                    </h2>
+                    <p class="justify">
+                        La caloría es la medida del contenido de energía de los alimentos. El cuerpo necesita calorías para cumplir con sus funciones, como la respiración, la circulación de la sangre y la actividad física. Cuando una persona está enferma, su cuerpo puede necesitar calorías extra para combatir la fiebre u otros problemas.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <h3 class="centrado">Dieta recomendada</h3>
+                <p>Te recomendamos darle un vistazo a los siguientes alimentos que debes incluir en tu dieta para una alimentacion balanceada.</p>
+                <div class="col-lg-6 col-sm-12">
+                        <p class="justify">
+                            <ul class="list-group">
+                                <li class="dieta list-group-item">Leche entera y semidesnatada.</li>
+                                <li class="dieta list-group-item">Quesos frescos enteros tipo Burgos y semigrasos.</li>
+                                <li class="dieta list-group-item">Yogures enteros. Yogur azucarado con frutas o cereales. Queso fresco con frutas y azúcar, tipo petit-suisse. Natas sin abusar.</li>
+                                <li class="dieta list-group-item">Pollo y pavo, ternera, cerdo magro, conejo, pierna de cordero.</li>
+                                <li class="dieta list-group-item">Hígado</li>
+                                <li class="dieta list-group-item">Jamón serrano y york, lomo embuchado, fiambre de pollo y pavo, lacón, mortadela.</li>
+                                <li class="dieta list-group-item">Pescados blancos como merluza, rape, pescadilla, lubina, dorada…</li>
+                                <li class="dieta list-group-item">Pescados azules tipo salmón, caballa, sardinas… También ahumados.</li>
+                                <li class="dieta list-group-item">Huevos</li>
+                                <li class="dieta list-group-item">Pan blanco, pastas, arroces, bollería casera o no industrial, galletas, cereales de desayuno…</li>
+                                
+                            </ul>
+                        </p>
+                    </div>   
+                    
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="justify">
+                            <ul class="list-group">
+                                <li class="dieta list-group-item">Patata, boniato.</li>
+                                <li class="dieta list-group-item">Verduras y hortalizas.</li>
+                                <li class="dieta list-group-item">Aguacates. Aceitunas.</li>
+                                <li class="dieta list-group-item">Legumbres (lentejas, garbanzos, alubias…).</li>
+                                <li class="dieta list-group-item">Frutos secos (almendras, avellanas, cacahuetes, nueces…) y frutas secas (pasas, higos, ciruelas, orejones…).</li>
+                                <li class="dieta list-group-item">Aceite de oliva virgen y de otras semillas (girasol, maíz…), mantequilla y margarina.</li>
+                                <li class="dieta list-group-item">Azúcares y derivados (miel, melaza, mermeladas…)</li>
+                                <li class="dieta list-group-item">Salsas tipo bechamel, de yogur (enteros), mayonesa, vinagreta…</li>
+                                <li class="dieta list-group-item">Zumos de fruta y hortalizas.</li>
+                                <li class="dieta list-group-item">Cacao.</li>
+                            </ul>
+
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        <section id="rutine">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="columns col-lg-6 col-sm-12">
-                        <h2 class="title">
-                            Definamos que son las calorias
-                        </h2>
-                        <p class="justify">
-                            Medida del contenido de energía de los alimentos. El cuerpo necesita calorías para cumplir con sus funciones, como la respiración, la circulación de la sangre y la actividad física. Cuando una persona está enferma, su cuerpo puede necesitar calorías extra para combatir la fiebre u otros problemas.
-                        </p>
-                    </div>
-                    
-                    <div class="columns col-lg-6 col-sm-12">
-                        
-                            <img class="rutine-img" src="calorias.jpg" alt="calorias">
-                        
-                        
-                    </div>
-                </div>
-            </div>
+        
+            
+            
+            
         </section>
-        <section id="diet">
+        <section id="rutine">
             <div class="container-fluid">
 
             </div>
@@ -115,6 +194,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-<script src="calculadora.js"></script>
+<script src="../scripts/calculadora.js"></script>
 </body>
 </html>
