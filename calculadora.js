@@ -13,7 +13,7 @@ btn.addEventListener('click', ()=>{
     document.querySelector('.resultado').innerHTML=res;
 
     /* Se compara el imc y se modifica el div con la clase res-description de acuerdo al resultado del imc usando el DOM */
-    if(imc==0 && imc==''){
+    if(imc===0 && imc===''){
         let nulo='<div class="res-description col-lg-6"><h2 class="title">Tu resultado es</h2><p>La informacion que ingresó:</p><p>Estatura: '+estatura+' metros</p></p><p>Peso: '+peso+' kilogramos</p><p>Su IMC es '+imc+'</p><p>Por favor verifique los datos ingresados</p></div>'
         document.querySelector('.res-description').innerHTML=nulo;
     }if(imc<=18.5){
