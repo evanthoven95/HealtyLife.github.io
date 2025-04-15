@@ -45,10 +45,22 @@ font-size: larger;
 font-weight: 600;
 padding: 0%;
 
-
 }
+.ir-arriba{
+    display: none;
+    padding:10px;
+    color: white;
+    background-image:linear-gradient(to right, #000000, #414d4f);
+    font-size:20px;
+    cursor:pointer;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    border-radius: 20px;
+  }
+
 .calculadora-img{
-    width: 85%;
+    width: 65%;
     height: 100%;
     border-radius: 20px;
     margin-left: auto;
@@ -59,20 +71,12 @@ padding: 0%;
     position: relative;
 }
 .row{
-    padding: 0 5%;
+    padding: 2.5% 2.5%;
 }
 /*Sections*/
-#rutine{
-    background-color: white;
-}
-.columns{
-    padding: 7% 2%;
-    font-size:large;
-
-}
-.description{
-    padding: 3% 2%; 
-}
+/* .color-section{
+    
+} */
 .card{
     position: absolute;
     width: 18rem;
@@ -95,14 +99,19 @@ padding: 0%;
 .title{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
-    padding-bottom: 5px;
-    text-align: justify;
-}
-.centrado{
-    font-family: sans-serif;
+    padding-bottom: 20px;
     text-align: center;
-    padding:0%
 }
+.columns{
+    padding: 2% 2%;
+    font-size:large;
+}
+/* .columns-center{
+    padding: 1% 1%;
+    font-size:large;
+    text-align: center;
+} */
+
 ul{
     list-style: none;
     
@@ -111,8 +120,22 @@ ul{
     font-size: large;
     text-align: justify;
 }
+.left{
+    font-size: large;
+    text-align: left;
+}
+
 .diet-img{
-    width: 85%;
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.plato-bien-comer{
+    width: 100%;
     height: 100%;
     border-radius: 20px;
     margin-left: auto;
@@ -120,7 +143,7 @@ ul{
     display: block;
 }
 /*Alinea las columnas de la calculadora IMC conforme al eje x usando la base de los contenedores como referencia*/
-.dos{ 
+.calculadora{ 
     align-items: baseline;
     padding: 5% 5%;
 }
@@ -139,7 +162,7 @@ table{
     font-family: arial, sans-serif;
     margin-bottom: 30px;
     width: 100%;
-   
+
 }
 
 th,td{
@@ -166,4 +189,14 @@ tr:hover{
     background-image: linear-gradient(to right, #19cbbd, #212acf);
     opacity: 85%;
     color: white;    
+}
+.res-description.col-lg-6{
+    padding-left: 5%;
+}
+.footer{
+    background-image: linear-gradient(to right,#19cbbd, #212acf);
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: x-large;
 }
