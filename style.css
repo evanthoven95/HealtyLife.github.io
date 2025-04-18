@@ -1,9 +1,3 @@
-/*Agregando una fuente propia en los archivos*/
-@font-face {
-    font-family: quartzo;
-    src: url(QuartzoBold-W9lv.ttf);
-}
-
 body{
     font-family: sans-serif;
     text-align: center;
@@ -13,10 +7,6 @@ h1, h2, h3, h4, h5, h6{
     line-height: 1.5;
     padding-bottom: 5%;
     text-align: justify;
-}
-.quartzo{
-    font-family: quartzo;
-    color: black;
 }
 /*Establece el padding de la navbar como 0 usando !important para marcarlo
  como prioritario encima de los estilos predeterminados de la clase en bootstrap, practica no recomendada*/
@@ -121,8 +111,7 @@ ul{
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    
+    display: block;   
 }
 .plato-bien-comer{
     width: 100%;
