@@ -76,7 +76,7 @@ btn.addEventListener('click', ()=>{
                 return;
             }
             if(imc>=13.6 && imc<=18.4){
-            let lowWeight='<div class="res-description col-lg-6"><h2 class="title">Tu resultado es</h2> <p>La informacion que ingresó:</p> <p>Estatura: '+estatura+' metros</p> <p>Peso: '+peso+' kilogramos</p> <p>Su IMC es '+Math.round(imc)+', su IMC es <span class="span-danger">BAJO</span>, se recomienda comer alimentos nutritivos y ricos en calorías, es una buena forma de ganar peso. También es importante comprender la razón por la que tienes un bajo peso.</p><>Lo mejor que puedes hacer es consultar con tu proveedor de atención médica si has perdido peso de forma inesperada. Tu proveedor de atención médica o un dietista pueden ayudarte a ganar peso de forma saludable. Juntos pueden crear un plan según tus necesidades.</p></div>'
+            let lowWeight='<div class="res-description col-lg-6"><h2 class="title">Tu resultado es</h2> <p>La informacion que ingresó:</p> <p>Estatura: '+estatura+' metros</p> <p>Peso: '+peso+' kilogramos</p> <p>Su IMC es '+Math.round(imc)+', su IMC es <span class="span-danger">BAJO</span>, se recomienda comer alimentos nutritivos y ricos en calorías, es una buena forma de ganar peso. También es importante comprender la razón por la que tienes un bajo peso.</p><p>Lo mejor que puedes hacer es consultar con tu proveedor de atención médica si has perdido peso de forma inesperada. Tu proveedor de atención médica o un dietista pueden ayudarte a ganar peso de forma saludable. Juntos pueden crear un plan según tus necesidades.</p></div>'
             document.querySelector('.res-description').innerHTML=lowWeight;
             return imc;
             }
